@@ -36,7 +36,7 @@ namespace SpanishPointTechnical.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "EmployeeExperience", "As a user,\r\nI was to see employee experience,\r\nSo that I can learn how to adapt m" +
-                    "y workpoint configuration using Spanish Point\'s Services.", ProgrammingLanguage.CSharp, featureTags);
+                    "y workplace configuration using Spanish Point\'s Services.", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,15 +75,13 @@ namespace SpanishPointTechnical.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Teat employee experience tab")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
-        public void TeatEmployeeExperienceTab()
+        [NUnit.Framework.DescriptionAttribute("Test employee experience tab")]
+        public void TestEmployeeExperienceTab()
         {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Teat employee experience tab", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test employee experience tab", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -93,22 +91,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 9
+#line 8
  testRunner.Given("On homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 10
+#line 9
  testRunner.When("Click Accept all cookies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 11
+#line 10
  testRunner.When("Hover Over Solution & Services", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 12
+#line 11
  testRunner.When("Click Modern Work", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 13
+#line 12
  testRunner.When("Click Employee Experience tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 14
+#line 13
  testRunner.Then("Assert Employee Experience details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
