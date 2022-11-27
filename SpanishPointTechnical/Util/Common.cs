@@ -28,7 +28,7 @@ namespace SpanishPointTechnical.Util
 
         internal void HoverElement(By by)
         {
-            WebElement ele = (WebElement)_driver.FindElement(by));
+            WebElement ele = (WebElement)_driver.FindElement(by);
             Actions action = new Actions(_driver);
             action.MoveToElement(ele).Perform();
             Debug.Print(TestContext.CurrentContext.Test + ":" + by.ToString() + " -> Hover");
